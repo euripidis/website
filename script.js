@@ -1,9 +1,31 @@
+const root = document.documentElement;
+const toggle = document.querySelector('[data-theme-toggle]');
+let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+root.setAttribute('data-theme', theme);
+
+if (toggle) {
+  toggle.addEventListener('click', () => {
+    theme = theme === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', theme);
+  });
+}
+
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', event => {
-    const targetId = link.getAttribute('href');
-    const target = document.querySelector(targetId);
+    const target = document.querySelector(link.getAttribute('href'));
     if (!target) return;
     event.preventDefault();
     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 });
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.16 });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));

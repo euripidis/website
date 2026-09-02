@@ -1,114 +1,176 @@
 <!DOCTYPE html>
-<html lang="el">
+<html lang="el" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Orizon Κέντρο Συμβουλευτικής & Ψυχολογίας</title>
+  <title>Aetheria | Κέντρο Συμβουλευτικής & Ψυχολογίας</title>
+  <meta name="description" content="Demo premium ιστοσελίδα για κέντρο συμβουλευτικής και ψυχολογίας με κομψή αισθητική και διακριτική κίνηση." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <a class="skip-link" href="#main-content">Μετάβαση στο περιεχόμενο</a>
 
   <header class="site-header">
-    <div class="container nav-wrap">
-      <a href="#hero" class="brand" aria-label="Orizon αρχική">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-text">ORIZON</span>
+    <div class="container nav-bar">
+      <a href="#hero" class="brand" aria-label="Aetheria αρχική">
+        <svg class="brand-logo" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="1.5" opacity="0.35"/>
+          <path d="M14 28C18 18 30 18 34 28" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M18 21C21 17 27 17 30 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.75"/>
+        </svg>
+        <span>
+          <strong>Aetheria</strong>
+          <small>Κέντρο Συμβουλευτικής & Ψυχολογίας</small>
+        </span>
       </a>
+
       <nav class="main-nav" aria-label="Κύρια πλοήγηση">
         <a href="#about">Σχετικά</a>
         <a href="#services">Υπηρεσίες</a>
-        <a href="#approach">Προσέγγιση</a>
+        <a href="#space">Ο χώρος</a>
         <a href="#contact">Επικοινωνία</a>
       </nav>
+
+      <button class="theme-toggle" data-theme-toggle aria-label="Switch theme">
+        <span class="theme-dot"></span>
+      </button>
     </div>
   </header>
 
   <main id="main-content">
-    <section id="hero" class="hero">
+    <section id="hero" class="hero section">
       <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Κέντρο Συμβουλευτικής & Ψυχολογίας</p>
-          <h1>Ένας ήρεμος χώρος υποστήριξης, κατανόησης και προσωπικής ενδυνάμωσης.</h1>
-          <p class="hero-text">Η demo αυτή σελίδα παρουσιάζει ένα σύγχρονο και διακριτικό κέντρο ψυχολογικής υποστήριξης με έμφαση στην εμπιστοσύνη, την επιστημονική προσέγγιση και τη σαφή ενημέρωση γύρω από τις παρεχόμενες υπηρεσίες.</p>
-          <a class="button-primary" href="#contact">Επικοινωνία</a>
-        </div>
-        <div class="hero-card" aria-label="Στοιχεία κέντρου">
-          <div class="card-shell">
-            <p class="card-label">Demo profile</p>
-            <h2>Orizon</h2>
-            <p>Αθήνα, Κολωνάκι</p>
-            <ul>
-              <li>Ατομική συμβουλευτική ενηλίκων</li>
-              <li>Υποστήριξη γονέων</li>
-              <li>Διαχείριση άγχους και μεταβάσεων</li>
-            </ul>
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Demo έκδοση premium homepage</p>
+          <h1>Η ηρεμία μπορεί να αποκτήσει και ψηφιακή μορφή.</h1>
+          <p class="lead">Ένα κομψό, σύγχρονο website για κέντρο συμβουλευτικής και ψυχολογίας, σχεδιασμένο ώστε να αποπνέει εμπιστοσύνη, ανθρώπινη παρουσία και υψηλή αισθητική χωρίς να γίνεται βαρύ ή ψυχρό.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">Επικοινωνία</a>
+            <a class="button button-secondary" href="#services">Υπηρεσίες</a>
           </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+          <div class="hero-panel glass-card floating-card card-a">
+            <span class="mini-label">Calm design</span>
+            <h2>Soft motion</h2>
+            <p>Κίνηση χαμηλής έντασης, διακριτικά layers και καθαρές επιφάνειες.</p>
+          </div>
+          <div class="hero-panel glass-card floating-card card-b">
+            <span class="mini-label">Elegant layout</span>
+            <h2>Premium tone</h2>
+            <p>Editorial αίσθηση, ευγένεια στην τυπογραφία και ήπια χρώματα.</p>
+          </div>
+          <svg class="line-art" viewBox="0 0 500 500" fill="none">
+            <path d="M64 265C132 153 243 109 330 160C398 200 419 297 367 357C314 420 208 437 136 383C77 338 47 293 64 265Z" stroke="currentColor" stroke-width="1.2" opacity="0.35"/>
+            <path d="M129 257C164 196 225 167 284 188C341 207 374 263 357 316C338 374 272 406 208 392C149 379 103 328 129 257Z" stroke="currentColor" stroke-width="1.2" opacity="0.55"/>
+          </svg>
         </div>
       </div>
     </section>
 
     <section id="about" class="section section-soft">
-      <div class="container narrow">
-        <p class="section-kicker">Σχετικά με το κέντρο</p>
-        <h2>Μια προσεγμένη πρώτη εικόνα, χωρίς υπερβολή.</h2>
-        <p>Το Orizon είναι ένα υποθετικό κέντρο συμβουλευτικής και ψυχολογίας που δημιουργήθηκε ως demo παρουσίαση. Ο σχεδιασμός του στηρίζεται σε μια premium αισθητική με καθαρή δομή, ήπια χρωματική παλέτα και περιεχόμενο που εμπνέει ασφάλεια και σοβαρότητα.</p>
+      <div class="container two-col">
+        <div class="reveal">
+          <p class="section-kicker">Σχετικά</p>
+          <h2>Ένα site που δεν μοιάζει τυπικό.</h2>
+        </div>
+        <div class="reveal">
+          <p>Η demo έκδοση Aetheria σχεδιάστηκε για να απομακρύνεται από την επίπεδη, αναμενόμενη εικόνα πολλών websites ψυχολογικών υπηρεσιών. Διατηρεί τη σοβαρότητα που χρειάζεται ένας τέτοιος χώρος, αλλά προσθέτει περισσότερη οπτική ταυτότητα, κομψά γραφικά στοιχεία και ήπια κινούμενα layers.</p>
+        </div>
       </div>
     </section>
 
     <section id="services" class="section">
       <div class="container">
-        <p class="section-kicker">Υπηρεσίες</p>
-        <div class="section-head">
-          <h2>Βασικές υπηρεσίες της αρχικής σελίδας</h2>
-          <p>Κρατάμε μόνο τις αναγκαίες ενότητες, ώστε ο επισκέπτης να αντιλαμβάνεται γρήγορα τι προσφέρει το κέντρο.</p>
+        <div class="section-head reveal">
+          <div>
+            <p class="section-kicker">Υπηρεσίες</p>
+            <h2>Οι βασικές ενότητες μένουν καθαρές, αλλά παρουσιάζονται πιο ζωντανά.</h2>
+          </div>
+          <p>Επιλέγουμε λίγες υπηρεσίες, σαφή μηνύματα και ένα grid με περισσότερο design χαρακτήρα, ώστε η σελίδα να κρατά το ενδιαφέρον χωρίς να χάνει την ισορροπία της.</p>
         </div>
+
         <div class="services-grid">
-          <article class="service-card">
+          <article class="service-card reveal">
+            <span class="service-index">01</span>
             <h3>Ατομική συμβουλευτική</h3>
-            <p>Υποστήριξη ενηλίκων για προσωπικά ζητήματα, συναισθηματικές δυσκολίες και περιόδους αλλαγής.</p>
+            <p>Υποστήριξη ενηλίκων για άγχος, σχέσεις, επαγγελματικές πιέσεις και προσωπική ενδυνάμωση.</p>
           </article>
-          <article class="service-card">
+          <article class="service-card reveal delay-1">
+            <span class="service-index">02</span>
             <h3>Συμβουλευτική γονέων</h3>
-            <p>Καθοδήγηση γύρω από θέματα οικογένειας, επικοινωνίας και καθημερινών προκλήσεων στη γονεϊκότητα.</p>
+            <p>Δομημένη καθοδήγηση για επικοινωνία στην οικογένεια και διαχείριση καθημερινών προκλήσεων.</p>
           </article>
-          <article class="service-card">
+          <article class="service-card reveal delay-2">
+            <span class="service-index">03</span>
             <h3>Διαχείριση άγχους</h3>
-            <p>Εστιασμένη υποστήριξη για καλύτερη κατανόηση, οργάνωση και διαχείριση στρεσογόνων συνθηκών.</p>
+            <p>Έμφαση στην κατανόηση των μοτίβων πίεσης και στην ανάπτυξη πιο λειτουργικών στρατηγικών.</p>
           </article>
-          <article class="service-card">
-            <h3>Υποστήριξη σε μεταβάσεις</h3>
-            <p>Συνοδεία σε επαγγελματικές, οικογενειακές ή προσωπικές μεταβάσεις με στόχο τη σταθερότητα και την προσαρμογή.</p>
+          <article class="service-card reveal delay-3">
+            <span class="service-index">04</span>
+            <h3>Μεταβάσεις ζωής</h3>
+            <p>Στήριξη σε φάσεις αλλαγής με στόχο σταθερότητα, νοηματοδότηση και συναισθηματική ισορροπία.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="approach" class="section section-soft">
-      <div class="container approach-grid">
-        <div>
-          <p class="section-kicker">Η προσέγγισή μας</p>
-          <h2>Διακριτικότητα, επιστημονική βάση και ανθρώπινη παρουσία.</h2>
+    <section id="space" class="section editorial-band">
+      <div class="container editorial-grid">
+        <div class="visual-stack reveal" aria-hidden="true">
+          <div class="editorial-card large-card">
+            <div class="grain"></div>
+            <div class="abstract-leaf abstract-leaf-one"></div>
+            <div class="abstract-leaf abstract-leaf-two"></div>
+          </div>
+          <div class="editorial-card small-card floating-card-soft"></div>
         </div>
-        <div>
-          <p>Το περιεχόμενο της σελίδας είναι γραμμένο με ήπιο και προσεκτικό τόνο, ώστε να μεταδίδει αξιοπιστία χωρίς βαρύτητα ή υπερβολικές υποσχέσεις. Αυτό ταιριάζει ιδιαίτερα σε χώρους συμβουλευτικής, όπου η πρώτη εντύπωση πρέπει να είναι καθαρή, ήρεμη και φιλόξενη.</p>
+        <div class="editorial-copy reveal delay-1">
+          <p class="section-kicker">Ο χώρος</p>
+          <h2>Γραφικά στοιχεία που δημιουργούν ατμόσφαιρα χωρίς να φωνάζουν.</h2>
+          <p>Αντί για κοινότοπες stock εικόνες, η σελίδα μπορεί να στηριχθεί σε αφηρημένα οργανικά σχήματα, λεπτές κινήσεις, glow surfaces και layered σύνθεση. Έτσι αποκτά προσωπικότητα και πιο premium παρουσία.</p>
+          <div class="quote-card glass-card">
+            <p>“Η πρώτη εντύπωση πρέπει να είναι διακριτική, καθησυχαστική και αισθητικά ώριμη.”</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft metrics-section">
+      <div class="container metrics-grid">
+        <div class="metric-card reveal">
+          <span class="metric-value">4</span>
+          <span class="metric-label">βασικές υπηρεσίες στην αρχική</span>
+        </div>
+        <div class="metric-card reveal delay-1">
+          <span class="metric-value">1</span>
+          <span class="metric-label">κύριο CTA για επικοινωνία</span>
+        </div>
+        <div class="metric-card reveal delay-2">
+          <span class="metric-value">0</span>
+          <span class="metric-label">περιττά blocks ή βαρύ UI</span>
         </div>
       </div>
     </section>
 
     <section id="contact" class="section contact-section">
       <div class="container contact-grid">
-        <div>
+        <div class="reveal">
           <p class="section-kicker">Επικοινωνία</p>
-          <h2>Μπορείτε να επικοινωνήσετε με το κέντρο για πληροφορίες ή για προγραμματισμό πρώτης συνάντησης.</h2>
+          <h2>Ένα καθαρό τέλος διαδρομής με σαφή στοιχεία επικοινωνίας.</h2>
+          <p>Για τη demo έκδοση χρησιμοποιούνται ενδεικτικά στοιχεία. Στην τελική εκδοχή θα τα αντικαταστήσουμε με τα πραγματικά στοιχεία του κέντρου και, αν θελήσεις, με φόρμα επικοινωνίας ή χάρτη.</p>
         </div>
-        <div class="contact-card">
-          <p><strong>Τηλέφωνο</strong><br><a href="tel:+302101112233">+30 210 111 2233</a></p>
-          <p><strong>Email</strong><br><a href="mailto:info@orizon-demo.gr">info@orizon-demo.gr</a></p>
-          <p><strong>Διεύθυνση</strong><br>Σκουφά 18, Αθήνα</p>
+        <div class="contact-card glass-card reveal delay-1">
+          <p><strong>Τηλέφωνο</strong><br><a href="tel:+302101234567">+30 210 123 4567</a></p>
+          <p><strong>Email</strong><br><a href="mailto:hello@aetheria-demo.gr">hello@aetheria-demo.gr</a></p>
+          <p><strong>Διεύθυνση</strong><br>Λεωφ. Κηφισίας 112, Αθήνα</p>
+          <a class="button button-primary full-button" href="mailto:hello@aetheria-demo.gr">Αποστολή email</a>
         </div>
       </div>
     </section>
