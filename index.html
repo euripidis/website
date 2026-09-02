@@ -1,16 +1,118 @@
 <!DOCTYPE html>
 <html lang="el">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Το πρώτο μου site</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orizon Κέντρο Συμβουλευτικής & Ψυχολογίας</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Το site μου ανέβηκε σωστά</h1>
-  <p>Αυτό είναι το πρώτο δοκιμαστικό μου website.</p>
+  <a class="skip-link" href="#main-content">Μετάβαση στο περιεχόμενο</a>
 
-  <button id="testBtn">Πάτησέ με</button>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#hero" class="brand" aria-label="Orizon αρχική">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">ORIZON</span>
+      </a>
+      <nav class="main-nav" aria-label="Κύρια πλοήγηση">
+        <a href="#about">Σχετικά</a>
+        <a href="#services">Υπηρεσίες</a>
+        <a href="#approach">Προσέγγιση</a>
+        <a href="#contact">Επικοινωνία</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Κέντρο Συμβουλευτικής & Ψυχολογίας</p>
+          <h1>Ένας ήρεμος χώρος υποστήριξης, κατανόησης και προσωπικής ενδυνάμωσης.</h1>
+          <p class="hero-text">Η demo αυτή σελίδα παρουσιάζει ένα σύγχρονο και διακριτικό κέντρο ψυχολογικής υποστήριξης με έμφαση στην εμπιστοσύνη, την επιστημονική προσέγγιση και τη σαφή ενημέρωση γύρω από τις παρεχόμενες υπηρεσίες.</p>
+          <a class="button-primary" href="#contact">Επικοινωνία</a>
+        </div>
+        <div class="hero-card" aria-label="Στοιχεία κέντρου">
+          <div class="card-shell">
+            <p class="card-label">Demo profile</p>
+            <h2>Orizon</h2>
+            <p>Αθήνα, Κολωνάκι</p>
+            <ul>
+              <li>Ατομική συμβουλευτική ενηλίκων</li>
+              <li>Υποστήριξη γονέων</li>
+              <li>Διαχείριση άγχους και μεταβάσεων</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section-soft">
+      <div class="container narrow">
+        <p class="section-kicker">Σχετικά με το κέντρο</p>
+        <h2>Μια προσεγμένη πρώτη εικόνα, χωρίς υπερβολή.</h2>
+        <p>Το Orizon είναι ένα υποθετικό κέντρο συμβουλευτικής και ψυχολογίας που δημιουργήθηκε ως demo παρουσίαση. Ο σχεδιασμός του στηρίζεται σε μια premium αισθητική με καθαρή δομή, ήπια χρωματική παλέτα και περιεχόμενο που εμπνέει ασφάλεια και σοβαρότητα.</p>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <p class="section-kicker">Υπηρεσίες</p>
+        <div class="section-head">
+          <h2>Βασικές υπηρεσίες της αρχικής σελίδας</h2>
+          <p>Κρατάμε μόνο τις αναγκαίες ενότητες, ώστε ο επισκέπτης να αντιλαμβάνεται γρήγορα τι προσφέρει το κέντρο.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Ατομική συμβουλευτική</h3>
+            <p>Υποστήριξη ενηλίκων για προσωπικά ζητήματα, συναισθηματικές δυσκολίες και περιόδους αλλαγής.</p>
+          </article>
+          <article class="service-card">
+            <h3>Συμβουλευτική γονέων</h3>
+            <p>Καθοδήγηση γύρω από θέματα οικογένειας, επικοινωνίας και καθημερινών προκλήσεων στη γονεϊκότητα.</p>
+          </article>
+          <article class="service-card">
+            <h3>Διαχείριση άγχους</h3>
+            <p>Εστιασμένη υποστήριξη για καλύτερη κατανόηση, οργάνωση και διαχείριση στρεσογόνων συνθηκών.</p>
+          </article>
+          <article class="service-card">
+            <h3>Υποστήριξη σε μεταβάσεις</h3>
+            <p>Συνοδεία σε επαγγελματικές, οικογενειακές ή προσωπικές μεταβάσεις με στόχο τη σταθερότητα και την προσαρμογή.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="approach" class="section section-soft">
+      <div class="container approach-grid">
+        <div>
+          <p class="section-kicker">Η προσέγγισή μας</p>
+          <h2>Διακριτικότητα, επιστημονική βάση και ανθρώπινη παρουσία.</h2>
+        </div>
+        <div>
+          <p>Το περιεχόμενο της σελίδας είναι γραμμένο με ήπιο και προσεκτικό τόνο, ώστε να μεταδίδει αξιοπιστία χωρίς βαρύτητα ή υπερβολικές υποσχέσεις. Αυτό ταιριάζει ιδιαίτερα σε χώρους συμβουλευτικής, όπου η πρώτη εντύπωση πρέπει να είναι καθαρή, ήρεμη και φιλόξενη.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-kicker">Επικοινωνία</p>
+          <h2>Μπορείτε να επικοινωνήσετε με το κέντρο για πληροφορίες ή για προγραμματισμό πρώτης συνάντησης.</h2>
+        </div>
+        <div class="contact-card">
+          <p><strong>Τηλέφωνο</strong><br><a href="tel:+302101112233">+30 210 111 2233</a></p>
+          <p><strong>Email</strong><br><a href="mailto:info@orizon-demo.gr">info@orizon-demo.gr</a></p>
+          <p><strong>Διεύθυνση</strong><br>Σκουφά 18, Αθήνα</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>

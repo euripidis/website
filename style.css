@@ -1,19 +1,273 @@
+:root {
+  --bg: #f6f2ec;
+  --surface: #fbf8f3;
+  --surface-strong: #efe7dc;
+  --text: #1f1a17;
+  --muted: #6f655e;
+  --line: rgba(31, 26, 23, 0.12);
+  --accent: #6a7c72;
+  --accent-dark: #51645a;
+  --shadow: 0 18px 50px rgba(38, 28, 17, 0.08);
+  --radius: 24px;
+  --container: 1160px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 body {
-  font-family: Arial, sans-serif;
-  margin: 40px;
-  background: #f4f6f8;
-  color: #222;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  background: linear-gradient(180deg, #f8f4ee 0%, #f4efe7 100%);
+  line-height: 1.6;
+}
+
+a { color: inherit; }
+img { max-width: 100%; display: block; }
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+.skip-link:focus {
+  left: 16px;
+  top: 16px;
+  background: #fff;
+  padding: 10px 14px;
+  z-index: 1000;
+}
+
+.container {
+  width: min(calc(100% - 40px), var(--container));
+  margin: 0 auto;
+}
+
+.narrow { max-width: 820px; }
+
+.site-header {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(12px);
+  background: rgba(248, 244, 238, 0.78);
+  border-bottom: 1px solid rgba(31, 26, 23, 0.06);
+  z-index: 50;
+}
+
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 84px;
+  gap: 24px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.brand-mark {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7e8f85, #cdbba5);
+  box-shadow: 0 0 0 6px rgba(122, 140, 128, 0.08);
+}
+
+.brand-text {
+  letter-spacing: 0.24em;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.main-nav {
+  display: flex;
+  gap: 28px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.hero {
+  padding: 92px 0 72px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.eyebrow,
+.section-kicker,
+.card-label {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+h1, h2, h3 {
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1.05;
+  margin: 0;
+  font-weight: 600;
 }
 
 h1 {
-  color: #0b5cab;
+  font-size: clamp(3rem, 6vw, 5.7rem);
+  max-width: 11ch;
+  margin: 18px 0 22px;
 }
 
-button {
-  padding: 10px 16px;
-  border: none;
-  background: #0b5cab;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
+.hero-text,
+.section-head p,
+.service-card p,
+.contact-card p,
+#about p,
+#approach p {
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+
+.button-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 22px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  margin-top: 16px;
+  transition: background 0.2s ease;
+}
+.button-primary:hover { background: var(--accent-dark); }
+
+.hero-card {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-shell,
+.service-card,
+.contact-card {
+  background: rgba(251, 248, 243, 0.82);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.card-shell {
+  width: min(100%, 420px);
+  padding: 34px;
+}
+
+.card-shell h2 {
+  font-size: 2.3rem;
+  margin: 12px 0 8px;
+}
+
+.card-shell ul {
+  margin: 22px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.section {
+  padding: 86px 0;
+}
+
+.section-soft {
+  background: rgba(255, 255, 255, 0.35);
+  border-top: 1px solid rgba(31, 26, 23, 0.05);
+  border-bottom: 1px solid rgba(31, 26, 23, 0.05);
+}
+
+.section-head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-bottom: 32px;
+}
+
+.section-head h2,
+#about h2,
+#approach h2,
+#contact h2 {
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  margin: 10px 0 16px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.service-card {
+  padding: 28px;
+}
+
+.service-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.approach-grid,
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  align-items: start;
+}
+
+.contact-card {
+  padding: 30px;
+}
+
+.contact-card a {
+  text-decoration: none;
+}
+
+@media (max-width: 920px) {
+  .hero-grid,
+  .section-head,
+  .services-grid,
+  .approach-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 56px;
+  }
+
+  h1 {
+    max-width: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .container {
+    width: min(calc(100% - 24px), var(--container));
+  }
+
+  .card-shell,
+  .service-card,
+  .contact-card {
+    padding: 22px;
+    border-radius: 20px;
+  }
 }
