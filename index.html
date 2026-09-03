@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Élanora | Κέντρο Συμβουλευτικής & Ψυχολογίας</title>
-  <meta name="description" content="Πολυτελής και ήρεμη demo αρχική σελίδα για κέντρο συμβουλευτικής και ψυχολογίας." />
+  <title>Aetheria | Κέντρο Συμβουλευτικής & Ψυχολογίας</title>
+  <meta name="description" content="Demo premium ιστοσελίδα για κέντρο συμβουλευτικής και ψυχολογίας με κομψή αισθητική και μέντα χρωματική παλέτα." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -15,14 +15,14 @@
 
   <header class="site-header">
     <div class="container nav-bar">
-      <a href="#hero" class="brand" aria-label="Élanora αρχική">
-        <svg class="brand-logo" viewBox="0 0 52 52" fill="none" aria-hidden="true">
-          <circle cx="26" cy="26" r="23" stroke="currentColor" stroke-width="1.25" opacity="0.3"></circle>
-          <path d="M18 31C18 24 22 18 28 18C32 18 36 21 36 27C36 33 31 37 25 37C21 37 18 35 18 31Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
-          <path d="M23 17C24.4 15.5 26 14.8 28.2 14.8C30.2 14.8 31.8 15.5 33.2 17" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"></path>
+      <a href="#hero" class="brand" aria-label="Aetheria αρχική">
+        <svg class="brand-logo" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="1.5" opacity="0.35"/>
+          <path d="M14 28C18 18 30 18 34 28" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M18 21C21 17 27 17 30 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.75"/>
         </svg>
         <span>
-          <strong>Élanora</strong>
+          <strong>Aetheria</strong>
           <small>Κέντρο Συμβουλευτικής & Ψυχολογίας</small>
         </span>
       </a>
@@ -30,12 +30,12 @@
       <nav class="main-nav" aria-label="Κύρια πλοήγηση">
         <a href="#about">Σχετικά</a>
         <a href="#services">Υπηρεσίες</a>
-        <a href="#experience">Εμπειρία</a>
+        <a href="#space">Ο χώρος</a>
         <a href="#contact">Επικοινωνία</a>
       </nav>
 
-      <button class="theme-toggle" data-theme-toggle aria-label="Αλλαγή θέματος">
-        <span class="theme-core"></span>
+      <button class="theme-toggle" data-theme-toggle aria-label="Switch theme">
+        <span class="theme-dot"></span>
       </button>
     </div>
   </header>
@@ -44,9 +44,9 @@
     <section id="hero" class="hero section">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <p class="eyebrow">Premium calm digital presence</p>
-          <h1>Μια εκλεπτυσμένη αίσθηση ηρεμίας από το πρώτο βλέμμα.</h1>
-          <p class="lead">Η demo αυτή πρόταση συνδυάζει γήινους τόνους, διακριτική πολυτέλεια και ήπια κίνηση, ώστε το website να αποπνέει κύρος, φροντίδα και συναισθηματική ασφάλεια χωρίς να γίνεται βαρύ ή υπερβολικό.</p>
+          <p class="eyebrow">Demo έκδοση premium homepage</p>
+          <h1>Η ηρεμία μπορεί να αποκτήσει και ψηφιακή μορφή.</h1>
+          <p class="lead">Ένα κομψό, σύγχρονο website για κέντρο συμβουλευτικής και ψυχολογίας, σχεδιασμένο ώστε να αποπνέει εμπιστοσύνη, ανθρώπινη παρουσία και υψηλή αισθητική χωρίς να γίνεται βαρύ ή ψυχρό.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#contact">Επικοινωνία</a>
             <a class="button button-secondary" href="#services">Υπηρεσίες</a>
@@ -54,39 +54,34 @@
         </div>
 
         <div class="hero-visual reveal" aria-hidden="true">
-          <div class="halo halo-one"></div>
-          <div class="halo halo-two"></div>
-          <div class="composition-frame glass-card floating-card">
-            <div class="composition-top">
-              <div class="gold-ring"></div>
-              <div class="silhouette-line"></div>
-            </div>
-            <div class="composition-bottom">
-              <div>
-                <span class="mini-label">Quiet luxury</span>
-                <h2>Ήρεμη δύναμη</h2>
-              </div>
-              <p>Λεπτές χρυσές λεπτομέρειες, γήινες επιφάνειες και αέριες μετακινήσεις που δημιουργούν premium εμπειρία χωρίς θόρυβο.</p>
-            </div>
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+          <div class="hero-panel glass-card floating-card card-a">
+            <span class="mini-label">Calm design</span>
+            <h2>Soft motion</h2>
+            <p>Κίνηση χαμηλής έντασης, διακριτικά layers και καθαρές επιφάνειες.</p>
           </div>
-          <div class="floating-note glass-card note-a">
-            <span>Elegant motion</span>
+          <div class="hero-panel glass-card floating-card card-b">
+            <span class="mini-label">Elegant layout</span>
+            <h2>Mint palette</h2>
+            <p>Δροσερή μέντα, πιο φωτεινές επιφάνειες και refined editorial αίσθηση.</p>
           </div>
-          <div class="floating-note glass-card note-b">
-            <span>Soft trust</span>
-          </div>
+          <svg class="line-art" viewBox="0 0 500 500" fill="none">
+            <path d="M64 265C132 153 243 109 330 160C398 200 419 297 367 357C314 420 208 437 136 383C77 338 47 293 64 265Z" stroke="currentColor" stroke-width="1.2" opacity="0.35"/>
+            <path d="M129 257C164 196 225 167 284 188C341 207 374 263 357 316C338 374 272 406 208 392C149 379 103 328 129 257Z" stroke="currentColor" stroke-width="1.2" opacity="0.55"/>
+          </svg>
         </div>
       </div>
     </section>
 
     <section id="about" class="section section-soft">
-      <div class="container split-grid">
+      <div class="container two-col">
         <div class="reveal">
           <p class="section-kicker">Σχετικά</p>
-          <h2>Πολυτέλεια χωρίς ψυχρότητα.</h2>
+          <h2>Ένα site που δεν μοιάζει τυπικό.</h2>
         </div>
-        <div class="reveal delay-1">
-          <p>Τα πιο επιτυχημένα therapy και premium wellness websites χτίζουν εμπιστοσύνη μέσα από ήρεμες παλέτες, γενναιόδωρο λευκό χώρο και προσεγμένη τυπογραφία, όχι μέσα από έντονα εφέ ή πιεστικά call-to-action [web:156][web:240][web:243]. Για αυτό η αισθητική της demo έκδοσης είναι πιο “quiet luxury”: εκλεπτυσμένη, καθαρή και ανθρώπινη [web:241][web:244].</p>
+        <div class="reveal">
+          <p>Η demo έκδοση Aetheria σχεδιάστηκε για να απομακρύνεται από την επίπεδη, αναμενόμενη εικόνα πολλών websites ψυχολογικών υπηρεσιών. Διατηρεί τη σοβαρότητα που χρειάζεται ένας τέτοιος χώρος, αλλά προσθέτει περισσότερη οπτική ταυτότητα, κομψά γραφικά στοιχεία και ήπια κινούμενα layers.</p>
         </div>
       </div>
     </section>
@@ -96,70 +91,70 @@
         <div class="section-head reveal">
           <div>
             <p class="section-kicker">Υπηρεσίες</p>
-            <h2>Σαφής ενημέρωση με κομψή παρουσίαση.</h2>
+            <h2>Οι βασικές ενότητες μένουν καθαρές, αλλά παρουσιάζονται πιο ζωντανά.</h2>
           </div>
-          <p>Οι καλά σχεδιασμένες psychology homepages πρέπει να εξηγούν μέσα σε λίγα δευτερόλεπτα ποιον εξυπηρετούν, τι προσφέρουν και ποιο είναι το επόμενο βήμα του επισκέπτη [web:232][web:240].</p>
+          <p>Επιλέγουμε λίγες υπηρεσίες, σαφή μηνύματα και ένα grid με περισσότερο design χαρακτήρα, ώστε η σελίδα να κρατά το ενδιαφέρον χωρίς να χάνει την ισορροπία της.</p>
         </div>
 
         <div class="services-grid">
           <article class="service-card reveal">
-            <span class="service-no">01</span>
+            <span class="service-index">01</span>
             <h3>Ατομική συμβουλευτική</h3>
-            <p>Υποστήριξη για προσωπικές δυσκολίες, εσωτερική πίεση και την ανάγκη για περισσότερο χώρο σκέψης και κατανόησης.</p>
+            <p>Υποστήριξη ενηλίκων για άγχος, σχέσεις, επαγγελματικές πιέσεις και προσωπική ενδυνάμωση.</p>
           </article>
           <article class="service-card reveal delay-1">
-            <span class="service-no">02</span>
+            <span class="service-index">02</span>
             <h3>Συμβουλευτική γονέων</h3>
-            <p>Καθοδήγηση για θέματα οικογένειας, ορίων, σχέσεων και καθημερινής συναισθηματικής ισορροπίας.</p>
+            <p>Δομημένη καθοδήγηση για επικοινωνία στην οικογένεια και διαχείριση καθημερινών προκλήσεων.</p>
           </article>
           <article class="service-card reveal delay-2">
-            <span class="service-no">03</span>
+            <span class="service-index">03</span>
             <h3>Διαχείριση άγχους</h3>
-            <p>Στοχευμένη υποστήριξη για περιόδους έντασης, πίεσης και συσσωρευμένης ψυχικής κόπωσης.</p>
+            <p>Έμφαση στην κατανόηση των μοτίβων πίεσης και στην ανάπτυξη πιο λειτουργικών στρατηγικών.</p>
           </article>
           <article class="service-card reveal delay-3">
-            <span class="service-no">04</span>
+            <span class="service-index">04</span>
             <h3>Μεταβάσεις ζωής</h3>
-            <p>Υποστήριξη σε αλλαγές που χρειάζονται χρόνο, σταθερότητα και έναν ασφαλή χώρο επεξεργασίας.</p>
+            <p>Στήριξη σε φάσεις αλλαγής με στόχο σταθερότητα, νοηματοδότηση και συναισθηματική ισορροπία.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="experience" class="section section-darkband">
-      <div class="container experience-grid">
-        <div class="experience-visual reveal" aria-hidden="true">
-          <div class="slab large-slab">
-            <div class="marble-lines"></div>
-            <div class="gold-arc gold-arc-one"></div>
-            <div class="gold-arc gold-arc-two"></div>
+    <section id="space" class="section editorial-band">
+      <div class="container editorial-grid">
+        <div class="visual-stack reveal" aria-hidden="true">
+          <div class="editorial-card large-card">
+            <div class="grain"></div>
+            <div class="abstract-leaf abstract-leaf-one"></div>
+            <div class="abstract-leaf abstract-leaf-two"></div>
           </div>
-          <div class="slab small-slab floating-card-soft"></div>
+          <div class="editorial-card small-card floating-card-soft"></div>
         </div>
-        <div class="experience-copy reveal delay-1">
-          <p class="section-kicker">Εμπειρία</p>
-          <h2>Ηρεμία, κύρος και αίσθηση προσεγμένου χώρου.</h2>
-          <p>Οι αναφορές σε premium calm websites δείχνουν ότι η πολυτέλεια προκύπτει καλύτερα από ισορροπημένη χρωματική παλέτα, διακριτικές λεπτομέρειες και αίσθηση άνεσης, όχι από υπερφορτωμένη διακόσμηση [web:237][web:241][web:243]. Γι’ αυτό το visual μέρος δουλεύει με glass surfaces, ήπιες χρυσές πινελιές και αργή κίνηση [web:235][web:238].</p>
+        <div class="editorial-copy reveal delay-1">
+          <p class="section-kicker">Ο χώρος</p>
+          <h2>Γραφικά στοιχεία που δημιουργούν ατμόσφαιρα χωρίς να φωνάζουν.</h2>
+          <p>Αντί για κοινότοπες stock εικόνες, η σελίδα μπορεί να στηριχθεί σε αφηρημένα οργανικά σχήματα, λεπτές κινήσεις, glow surfaces και layered σύνθεση. Έτσι αποκτά προσωπικότητα και πιο premium παρουσία.</p>
           <div class="quote-card glass-card">
-            <p>«Το εκλεπτυσμένο δεν χρειάζεται να φωνάζει. Αρκεί να σε ηρεμεί.»</p>
+            <p>“Η πρώτη εντύπωση πρέπει να είναι διακριτική, καθησυχαστική και αισθητικά ώριμη.”</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section metrics-section">
+    <section class="section section-soft metrics-section">
       <div class="container metrics-grid">
         <div class="metric-card reveal">
+          <span class="metric-value">4</span>
+          <span class="metric-label">βασικές υπηρεσίες στην αρχική</span>
+        </div>
+        <div class="metric-card reveal delay-1">
           <span class="metric-value">1</span>
           <span class="metric-label">κύριο CTA για επικοινωνία</span>
         </div>
-        <div class="metric-card reveal delay-1">
-          <span class="metric-value">4</span>
-          <span class="metric-label">βασικές υπηρεσίες με καθαρή δομή</span>
-        </div>
         <div class="metric-card reveal delay-2">
-          <span class="metric-value">∞</span>
-          <span class="metric-label">χώρος για πιο προσεγμένη τελική ταυτότητα</span>
+          <span class="metric-value">0</span>
+          <span class="metric-label">περιττά blocks ή βαρύ UI</span>
         </div>
       </div>
     </section>
@@ -168,14 +163,14 @@
       <div class="container contact-grid">
         <div class="reveal">
           <p class="section-kicker">Επικοινωνία</p>
-          <h2>Ένα ήρεμο, καθαρό τέλος διαδρομής.</h2>
-          <p>Η έρευνα για therapy website trust signals δείχνει ότι το contact σημείο λειτουργεί καλύτερα όταν είναι απλό, σαφές και δεν δημιουργεί πρόσθετη αβεβαιότητα για τον επισκέπτη [web:232][web:245]. Στη demo έκδοση κρατάμε μόνο τα απαραίτητα στοιχεία και ένα ήπιο call-to-action [web:156][web:240].</p>
+          <h2>Ένα καθαρό τέλος διαδρομής με σαφή στοιχεία επικοινωνίας.</h2>
+          <p>Για τη demo έκδοση χρησιμοποιούνται ενδεικτικά στοιχεία. Στην τελική εκδοχή θα τα αντικαταστήσουμε με τα πραγματικά στοιχεία του κέντρου και, αν θελήσεις, με φόρμα επικοινωνίας ή χάρτη.</p>
         </div>
         <div class="contact-card glass-card reveal delay-1">
-          <p><strong>Τηλέφωνο</strong><br><a href="tel:+302101157700">+30 210 115 7700</a></p>
-          <p><strong>Email</strong><br><a href="mailto:contact@elanora-demo.gr">contact@elanora-demo.gr</a></p>
-          <p><strong>Διεύθυνση</strong><br>Ηροδότου 18, Αθήνα</p>
-          <a class="button button-primary full-button" href="mailto:contact@elanora-demo.gr">Αποστολή email</a>
+          <p><strong>Τηλέφωνο</strong><br><a href="tel:+302101234567">+30 210 123 4567</a></p>
+          <p><strong>Email</strong><br><a href="mailto:hello@aetheria-demo.gr">hello@aetheria-demo.gr</a></p>
+          <p><strong>Διεύθυνση</strong><br>Λεωφ. Κηφισίας 112, Αθήνα</p>
+          <a class="button button-primary full-button" href="mailto:hello@aetheria-demo.gr">Αποστολή email</a>
         </div>
       </div>
     </section>
